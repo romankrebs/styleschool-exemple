@@ -1,12 +1,10 @@
 import React from "react";
 import { Grid, Hidden } from "@material-ui/core";
 import { withStyles } from "@material-ui/styles";
-// import { stylesDark } from "./styles";
 import { stylesLite } from "./styles";
 import { Link } from "react-router-dom";
 import Paragraph from "./p-array";
 import List from "./list";
-import Messages from "./button-messages";
 
 const wStyles = theme => stylesLite;
 const font = "Alegreya Sans";
@@ -97,14 +95,6 @@ function Footer(props) {
             8 (800) 550-78-93
           </p>
           <div className={classes.footerText}>
-            {/* <Messages
-              textLink="Все контакты"
-              style={{
-                fontFamily: font,
-                cursor: "pointer",
-                color: stylesLite.footerLink.color
-              }}
-            /> */}
             <Link to="/contacts">
               <span className={classes.footerLink} style={{ fontFamily: font }}>
                 Все контакты
@@ -120,30 +110,27 @@ function Footer(props) {
             style={{ ...stylesLite.footerText, fontFamily: font }}
             olStyle={{ paddingLeft: 10 }}
             arr={[
-              <Link to="/corporate">
-                <span
-                  className={classes.footerLink}
-                  style={{ fontFamily: font }}
-                >
-                  Корпоративные тренинги
-                </span>
-              </Link>,
-              <Link to="/network-educational-programs">
-                <span
-                  className={classes.footerLink}
-                  style={{ fontFamily: font }}
-                >
-                  Сотрудничество с ВУЗами и учебными центрами
-                </span>
-              </Link>,
-              <Link to="/lms">
-                <span
-                  className={classes.footerLink}
-                  style={{ fontFamily: font }}
-                >
-                  Организация системы дистанционного обучения
-                </span>
-              </Link>
+              <span
+                className={classes.footerLink}
+                style={{ fontFamily: font }}
+                title="иммитация ссылки"
+              >
+                Корпоративные тренинги
+              </span>,
+              <span
+                className={classes.footerLink}
+                style={{ fontFamily: font }}
+                title="иммитация ссылки"
+              >
+                Сотрудничество с ВУЗами и учебными центрами
+              </span>,
+              <span
+                className={classes.footerLink}
+                style={{ fontFamily: font }}
+                title="иммитация ссылки"
+              >
+                Организация системы дистанционного обучения
+              </span>
             ]}
           />
         </div>
@@ -180,17 +167,21 @@ function Footer(props) {
             «Высшая школа стилистики, дизайна и технологий»
           </p>
           <div style={{ height: "1rem" }} />
-          <Link to="/information-about-educational-organization">
-            <span className={classes.footerLink} style={{ fontFamily: font }}>
-              Сведения об образовательной организации
-            </span>
-          </Link>
+          <span
+            className={classes.footerLink}
+            style={{ fontFamily: font }}
+            title="иммитация ссылки"
+          >
+            Сведения об образовательной организации
+          </span>
           <br />
-          <Link to="/information">
-            <span className={classes.footerLink} style={{ fontFamily: font }}>
-              Информация для пользователей
-            </span>
-          </Link>
+          <span
+            className={classes.footerLink}
+            style={{ fontFamily: font }}
+            title="иммитация ссылки"
+          >
+            Информация для пользователей
+          </span>
         </Grid>
         <Hidden mdUp>
           <Grid item xs={12} style={{ height: "2rem" }} />
@@ -238,29 +229,6 @@ function Footer(props) {
                 #визуальныймерчендайзинг
               </span>
             </Link>
-            {/* <Link to="/interior-design">
-              <span className={classes.footerLink} style={{ fontFamily: font }}>
-                #дизайнинтереьера
-              </span>
-            </Link>
-            &emsp;
-            <Link to="/self_style">
-              <span className={classes.footerLink} style={{ fontFamily: font }}>
-                #самсебестилист
-              </span>
-            </Link>
-            &emsp;
-            <Link to="/master-class">
-              <span className={classes.footerLink} style={{ fontFamily: font }}>
-                #мастерклассы
-              </span>
-            </Link>
-            &emsp;
-            <Link to="/profashion">
-              <span className={classes.footerLink} style={{ fontFamily: font }}>
-                #имиджконсультант
-              </span>
-            </Link> */}
           </p>
         </Grid>
         <Grid item xs={12} md={12}>

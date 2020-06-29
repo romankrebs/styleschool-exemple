@@ -1,7 +1,7 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
 import Imagemaker from "../../components/banner-imagemaker";
-import Consultant from "../../components/banner-profashion";
+import Consultant from "../../components/banner-interior-prof";
 import MasterClasses from "../../components/banner-modern-moda-style2";
 
 export default function Component() {

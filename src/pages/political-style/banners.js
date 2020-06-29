@@ -1,9 +1,9 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
 
-import Modern from "../../components/banner-modern-moda-style";
+import Modern from "../../components/banner-modern-moda-style2";
 import Imagemaker from "../../components/banner-imagemaker";
-import Journalism from "../../components/banner-fashion-journalism";
+import Journalism from "../../components/banner-base-image-style";
 
 export default function Banners() {
   return (

@@ -2,7 +2,7 @@ import React from "react";
 import List from "../../components/list";
 import Paragraph from "../../components/p-array";
 import Banner1 from "../../components/banner-imagemaker";
-import Banner2 from "../../components/banner-political-style";
+import Banner2 from "../../components/banner-personal-brand";
 import Banner3 from "../../components/banner-modern-moda-style2";
 
 var styles = {

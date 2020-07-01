@@ -179,5 +179,6 @@ export const content = {
       }
       // space: "1rem"
     }
-  ]
+  ],
+  subMenu: true
 };

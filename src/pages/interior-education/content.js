@@ -76,5 +76,6 @@ export const content = {
         link: "/interior-design"
       }
     }
-  ]
+  ],
+  subMenu: true
 };

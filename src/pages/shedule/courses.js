@@ -56,42 +56,44 @@ const Component = props => {
         //   descript: "Дистанционно, 3 месяца"
         // },
 
+        // {
+        //   data: "c " + DateToString(dates.selfStyle.online, true),
+        //   head: "Сам себе стилист",
+        //   link: "/self_style",
+        //   descript: "Дистанционно, 1 месяц"
+        // },
         {
-          data: "c " + DateToString(dates.selfStyle.online, true),
-          head: "Сам себе стилист",
-          link: "/self_style",
-          descript: "Дистанционно, 1 месяц"
-        },
-        {
-          data: DateToString(dates.baseImageStyle.online, true),
-          head: "Базовый курс по имиджу и стилю",
+          data: dates.baseImageStyle.online,
+          head: "Стили в одежде",
           link: "/image-style",
-          descript: "Дистанционно, 3 месяца"
+          descript: "3 месяца",
+          type: "Дистанционно"
         },
         {
-          data: DateToString(dates.baseImageStyle.ofline, true),
-          head: "Базовый курс по имиджу и стилю",
+          data: dates.baseImageStyle.ofline,
+          head: "Стили в одежде",
           link: "/image-style",
-          descript: "Очно, 3 месяца"
-        },
-        {
-          data: "c " + DateToString(dates.selfStyle.ofline, true),
-          head: "Сам себе стилист",
-          link: "/self_style",
-          descript: "Очно, 1 месяц"
-        },
-        {
-          data: "c " + DateToString(dates.interiorDecor.online, true),
-          head: "Декорирование интерьеров",
-          link: "/interiordecor",
-          descript: "Дистанционно, 3 месяца"
-        },
-        {
-          data: "с " + DateToString(dates.interiorDesign.online, true),
-          head: "Дизайн интерьера",
-          link: "/interior-design",
-          descript: "Дистанционно, 3 месяца"
+          descript: "3 месяца",
+          type: "Очно"
         }
+        // {
+        //   data: "c " + DateToString(dates.selfStyle.ofline, true),
+        //   head: "Сам себе стилист",
+        //   link: "/self_style",
+        //   descript: "Очно, 1 месяц"
+        // },
+        // {
+        //   data: "c " + DateToString(dates.interiorDecor.online, true),
+        //   head: "Декорирование интерьеров",
+        //   link: "/interiordecor",
+        //   descript: "Дистанционно, 3 месяца"
+        // },
+        // {
+        //   data: "с " + DateToString(dates.interiorDesign.online, true),
+        //   head: "Дизайн интерьера",
+        //   link: "/interior-design",
+        //   descript: "Дистанционно, 3 месяца"
+        // }
       ]}
     />
   );

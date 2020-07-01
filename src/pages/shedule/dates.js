@@ -90,24 +90,39 @@ export const dates = {
     // Секрет стиля деним
     denimStyle: new Date(2020, 3, 24, 13, 0),
     // Цвет: смыслы, символы, тренды
-    colorMeanings: new Date(2020, 3, 22, 13, 0),
+    colorMeanings: new Date(2020, 6, 2, 19, 30),
     // Как при помощи цвета создать свой интерьер счастья.
     interiorOfHeppines: new Date(2020, 3, 16, 11, 0),
     // Сценарий освещения – залог комфортного жилья.
     lightingScenario: new Date(2020, 3, 17, 11, 0)
   },
   // Визуальный мерчендайзинг и витринистика
-  visualMerchandising: new Date(2020, 5, 10),
+  visualMerchandising: {
+    online: new Date(2020, 6, 7),
+    ofline: false
+  },
+  visualMerchandising2: {
+    online: new Date(2020, 8, 24),
+    ofline: new Date(2020, 8, 17)
+  },
   // Шопинг стажировка в Милане
   internshipInMilan: new Date(2020, 1, 17),
   // Дизайн и декорирование интерьеров, профподготовка
   designInterior: {
-    online: new Date(2020, 6, 22),
-    ofline: new Date(2020, 8, 22)
+    online: new Date(2020, 6, 20),
+    ofline: new Date(2020, 9, 21)
   },
   // Дизайн интерьера, интенсив
+  // Консультант по подбору интерьера
   interiorDesign: {
-    online: new Date(2020, 5, 22)
+    online: new Date(2020, 8, 8),
+    ofline: new Date(2020, 8, 10)
+  },
+  // Имиджмейкинг, репутационные технологии
+  imagemakingReputation: {
+    online: false,
+    // online: new Date(2020, 6, 21),
+    ofline: new Date(2020, 9, 12)
   },
   // Декорирование интерьеров, интенсив
   interiorDecor: {
@@ -121,15 +136,21 @@ export const dates = {
     ofline: new Date(2020, 5, 6)
   },
   // Имидж-консалтинг и Fashion-styling
+  // Модный стилист, имидж-консультант
   imagemaker: {
-    online: new Date(2020, 5, 27),
-    ofline: new Date(2020, 5, 30),
+    online: new Date(2020, 6, 21),
+    ofline: new Date(2020, 6, 8),
+    openLection: new Date(2020, 6, 8)
+  },
+  imagemaker2: {
+    online: new Date(2020, 8, 24),
+    ofline: new Date(2020, 8, 15),
     openLection: new Date(2020, 3, 20)
   },
   // базовый курс по имиджу и стилю
   baseImageStyle: {
-    online: new Date(2020, 5, 27),
-    ofline: new Date(2020, 5, 30)
+    online: new Date(2020, 6, 21),
+    ofline: new Date(2020, 6, 8)
   },
   // Сам себе стилист
   selfStyle: {
@@ -137,12 +158,29 @@ export const dates = {
     ofline: new Date(2020, 5, 6)
   },
   // Социальные и художественные стратегии моды
-  conceptsOfFashion: false, //new Date();
+  // Теория моды
+  conceptsOfFashion: new Date(2020, 6, 20),
   milanDesignWeek: "июнь 2020", // new Date(2020, 3, 21)
   // fashion styling
   fashionStyling: {
-    online: new Date(2020, 3, 22),
-    ofline: new Date(2020, 5, 22)
+    online: new Date(2020, 7, 8),
+    ofline: new Date(2020, 8, 8)
+  },
+  // Персональный бренд (Прохорович)
+  personalBrand: {
+    online: new Date(2020, 6, 15),
+    ofline: new Date(2020, 8, 15)
+  },
+  // Фэшн франчайзинг
+  fashionFranchising: {
+    online: new Date(2020, 8, 14),
+    // ofline: new Date(),
+    ofline: false
+  },
+  // Имидж-консалтинг (индивидуальный и деловой стиль)
+  imageConsulting: {
+    online: new Date(2020, 6, 21),
+    ofline: new Date(2020, 6, 8)
   }
 };
 

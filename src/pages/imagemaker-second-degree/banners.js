@@ -1,7 +1,7 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
 import Modern from "../../components/banner-modern-moda-style2";
-import Political from "../../components/banner-political-style";
+import Political from "../../components/banner-base-image-style";
 import Interior from "../../components/banner-interior-prof";
 
 export default function Banners(props) {

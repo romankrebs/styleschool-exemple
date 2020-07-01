@@ -5,7 +5,22 @@ import { styles } from "./style";
 import { withStyles } from "@material-ui/styles";
 
 const wStyles = theme => styles;
-// const font = {fontFamily: "PT Sans Narrow"};
+
+export function Linker(props) {
+  let component;
+  var link;
+  if (props.link) {
+    link = props.link.link.toString();
+  } else {
+    return props.children;
+  }
+  if (link.indexOf("http") >= 0) {
+    component = <a href={link}>{props.children}</a>;
+  } else {
+    component = <Link to={link}>{props.children}</Link>;
+  }
+  return component;
+}
 
 const LinkCreater = props => {
   const { classes } = props;
@@ -17,17 +32,11 @@ const LinkCreater = props => {
         <Button white buttonText={props.link.text} style={{ width: 120 }} />
       </div>
     );
-  } else if (props.link.type == "outerLink") {
+  } else {
     result = (
-      <a href={props.link.link}>
+      <Linker link={props.link}>
         <div className={classes.button}>{props.link.text}</div>
-      </a>
-    );
-  } else if (props.link.type == "insideLink") {
-    result = (
-      <Link to={props.link.link}>
-        <div className={classes.button}>{props.link.text}</div>
-      </Link>
+      </Linker>
     );
   }
   return result;

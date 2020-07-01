@@ -229,10 +229,6 @@ function Page(props) {
             </Grid>
           </Grid>
           <div style={{ height: "15vh" }} />
-          <Link to="/">
-            <span className={classes.topLink}>Высшее образование</span>
-          </Link>
-          <br />
           <Link to="/pro-education">
             <span className={classes.topLink}>
               Профессиональное образование
@@ -265,10 +261,6 @@ function Page(props) {
           <br />
           <Link to="/order">
             <span className={classes.topLink}>Запись на обучение</span>
-          </Link>
-          <br />
-          <Link to="/about">
-            <span className={classes.topLink}>Информация о школе</span>
           </Link>
           <br />
           <Link to="/career">

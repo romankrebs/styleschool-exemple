@@ -1,8 +1,8 @@
 import React from "react";
-import { Grid } from "@material-ui/core";
+import { Grid, Hidden } from "@material-ui/core";
 import { styles } from "./style";
 import { withStyles } from "@material-ui/styles";
-import LinkCreater from "./links";
+import LinkCreater, { Linker } from "./links";
 
 const wStyles = theme => styles;
 const font = { fontFamily: "PT Sans Narrow" };
@@ -13,9 +13,11 @@ function Tile(props) {
   return (
     <div style={{ padding: "1rem" }}>
       <div className={classes.tile}>
-        <h2 className={classes.h2} style={font}>
-          {props.head}
-        </h2>
+        <Linker link={props.link2 ? props.link2 : false}>
+          <h2 className={classes.h2} style={font}>
+            {props.head}
+          </h2>
+        </Linker>
         <h3 className={classes.h3}>{props.typeEducation}</h3>
         <div className={classes.duration}>{props.duration}</div>
         <p className={classes.p}>
@@ -36,7 +38,11 @@ function Tile(props) {
             <b>Получите:</b> {props.diplom}
           </p>
         ) : null}
-        {props.space ? <div style={{ height: props.space }} /> : null}
+        {props.space ? (
+          <Hidden smDown>
+            <div style={{ height: props.space }} />
+          </Hidden>
+        ) : null}
         <div style={{ padding: "1rem 0" }}>
           {props.link2 ? (
             <Grid container>

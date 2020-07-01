@@ -74,5 +74,6 @@ export const content = {
       }
       // space: "1.4rem"
     }
-  ]
+  ],
+  subMenu: true
 };

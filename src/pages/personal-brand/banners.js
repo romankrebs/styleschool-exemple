@@ -1,9 +1,9 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
 
-import StartUp from "../../components/banner-launch-technology-startup";
-import Advertising from "../../components/banner-advertising-as-a-communication";
-import International from "../../components/banner-international-communications";
+import StartUp from "../../components/banner-base-image-style";
+import Advertising from "../../components/banner-modern-moda-style2";
+import International from "../../components/banner-interior-prof";
 
 export default function Banners() {
   return (

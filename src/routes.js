@@ -8,10 +8,10 @@ import "./styles.css";
 import ImageStyle from "./pages/base-image-style/index";
 import Imagemaker from "./pages/imagemaker-second-degree/index";
 import Interior from "./pages/interior-design/index.js";
-import Political from "./pages/political-style/index.js";
+// import Political from "./pages/political-style/index.js";
 import InteriorProfi from "./pages/living-interior-design-and-decoration/index.js";
 import Vitrinism from "./pages/visual-merchandising-and-showcases-design/index.js";
-import About from "./pages/about/index";
+// import About from "./pages/about/index";
 import Contacts from "./pages/contacts/index";
 import Shedule from "./pages/shedule/index";
 import Order from "./pages/order/index";
@@ -22,12 +22,12 @@ import GraduateCourses from "./pages/shedule/graduate-courses";
 import TrainingSchedule from "./pages/shedule/training";
 import MasterClassesSchedule from "./pages/shedule/master-classes";
 import CoursesSchedule from "./pages/shedule/courses";
-import LauncherStartup from "./pages/launch-technology-startup/index";
+// import LauncherStartup from "./pages/launch-technology-startup/index";
 import PersonalBrand from "./pages/personal-brand/index";
-import Advertising from "./pages/advertising-as-a-communication/index";
-import Internship from "./pages/internship-in-milan/index";
+// import Advertising from "./pages/advertising-as-a-communication/index";
+// import Internship from "./pages/internship-in-milan/index";
 import MasterKlass from "./pages/master-class/index";
-import MilanDesignWeek from "./pages/milan-design-week/index";
+// import MilanDesignWeek from "./pages/milan-design-week/index";
 import JapanFashion from "./pages/japanese-fashion-philosophy/index";
 import RootTest2 from "./pages/root-test2/index";
 import PreRaphaelites from "./pages/preraphaelites/index";
@@ -51,7 +51,7 @@ export const routes = (
     <Route path="/second-degree-imagemaker" component={Imagemaker} />
 
     <Route path="/interior-design" component={Interior} />
-    <Route path="/political-style" component={Political} />
+    {/* <Route path="/political-style" component={Political} /> */}
     <Route
       path="/living-interior-design-and-decoration"
       component={InteriorProfi}
@@ -60,7 +60,7 @@ export const routes = (
       path="/visual-merchandising-and-showcases-design"
       component={Vitrinism}
     />
-    <Route path="/about" component={About} />
+    {/* <Route path="/about" component={About} /> */}
 
     <Route path="/contacts" component={Contacts} />
     <Route path="/shedule" component={Shedule} />
@@ -71,13 +71,13 @@ export const routes = (
     <Route path="/schedule/graduate-courses" component={GraduateCourses} />
     <Route path="/schedule/training" component={TrainingSchedule} />
     <Route path="/schedule/master-classes" component={MasterClassesSchedule} />
-    <Route path="/launch-technology-startup" component={LauncherStartup} />
-    <Route path="/advertising-as-a-communication" component={Advertising} />
+    {/* <Route path="/launch-technology-startup" component={LauncherStartup} /> */}
+    {/* <Route path="/advertising-as-a-communication" component={Advertising} /> */}
     <Route path="/personal-brand" component={PersonalBrand} />
     <Route path="/schedule/courses" component={CoursesSchedule} />
-    <Route path="/internship-in-milan" component={Internship} />
+    {/* <Route path="/internship-in-milan" component={Internship} /> */}
     <Route path="/master-class" component={MasterKlass} />
-    <Route path="/milan-design-week" component={MilanDesignWeek} />
+    {/* <Route path="/milan-design-week" component={MilanDesignWeek} /> */}
     <Route path="/japanese-fashion-philosophy" component={JapanFashion} />
     <Route path="/root-test2" component={RootTest2} />
     <Route path="/pre-raphaelites" component={PreRaphaelites} />

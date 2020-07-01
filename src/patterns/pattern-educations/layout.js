@@ -51,40 +51,48 @@ function Layout(props) {
             <p className={classes.p}>{props.content.descript}</p>
           </Grid>
         ) : null}
-        <Grid item xs={12} md={12}>
-          <List
-            style={{
-              fontSize: "1rem",
-              color: "rgb(100,100,100)",
-              padding: 0,
-              paddingBottom: ".5rem",
-              lineHeight: "1.5rem"
-            }}
-            num="none"
-            arr={[
-              <Link to="/pr-education">
-                <span className={classes.link}>
-                  Репутационные технологии, PR
-                </span>
-              </Link>,
-              <Link to="/fashion-education">
-                <span className={classes.link}>
-                  История моды, креативные технологии
-                </span>
-              </Link>,
-              <Link to="/interior-education">
-                <span className={classes.link}>
-                  Дизайн интерьера, креативные технологии
-                </span>
-              </Link>,
-              <Link to="/fashion-retail">
-                <span className={classes.link}>
-                  Fashion retail, технологии продаж
-                </span>
-              </Link>
-            ]}
-          />
-        </Grid>
+        {props.content.subMenu ? (
+          <Grid item xs={12} md={12}>
+            <h2
+              className={classes.h2}
+              style={{ textAlign: "left", paddingLeft: "2.3rem" }}
+            >
+              Перейти в раздел
+            </h2>
+            <List
+              style={{
+                fontSize: "1rem",
+                color: "rgb(100,100,100)",
+                padding: 0,
+                paddingBottom: ".5rem",
+                lineHeight: "2rem"
+              }}
+              num="none"
+              arr={[
+                <Link to="/pr-education">
+                  <span className={classes.link}>
+                    Репутационные технологии, PR
+                  </span>
+                </Link>,
+                <Link to="/fashion-education">
+                  <span className={classes.link}>
+                    История моды, креативные технологии
+                  </span>
+                </Link>,
+                <Link to="/interior-education">
+                  <span className={classes.link}>
+                    Дизайн интерьера, креативные технологии
+                  </span>
+                </Link>,
+                <Link to="/fashion-retail">
+                  <span className={classes.link}>
+                    Fashion retail, технологии продаж
+                  </span>
+                </Link>
+              ]}
+            />
+          </Grid>
+        ) : null}
       </Grid>
     </div>
   );
